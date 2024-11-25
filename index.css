@@ -479,7 +479,7 @@ font-size: 36px;
 
     
 
-@media (max-width: 760px){
+@media (max-width: 768px){
     header{
         background-image:        linear-gradient(to bottom, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 1) 100%), 
         url(./img/rafting\ alto\ con\ volcan\ fondo\ 9\ 6.png) ;
