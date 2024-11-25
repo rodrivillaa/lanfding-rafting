@@ -607,7 +607,7 @@ font-size: 24px;
      }
      .cart-img{
          position: relative;
-         left: 5%;
+         left: 10%;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -739,7 +739,7 @@ font-size: 24px;
          background-color: rgb(255, 255, 255);
          width: 180px;
          height: 180px;
-         left: -16%;
+         left: -14%;
          gap: 10px;
          z-index: 1;
          
@@ -751,7 +751,7 @@ font-size: 24px;
      
      .cart-img-2{
          position: absolute;
-         left: 37%;
+         left: 42%;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -894,12 +894,7 @@ text-align: left;
 
 
 
-     .presentacion {
-        position: relative; /* Establece el contexto de posicionamiento */
-        width: 200px; /* Ajusta según tus necesidades */
-        height: 180px; /* Ajusta según tus necesidades */
-      }
-      
+ 
       .cart-img-3 {
         position: absolute;
         top: -60%;
