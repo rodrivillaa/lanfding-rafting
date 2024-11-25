@@ -886,7 +886,7 @@ font-size: 24px;
     width: 280px;
     height: 280px;
     top: 45%;
-    left: 50%;
+    left: 45%;
     gap: 25px;
     
     color: #355570;
@@ -1450,3 +1450,489 @@ font-size: 12px;
     }
        
         }
+
+        @media (max-width: 390px) {
+            header{
+                background-image:        linear-gradient(to bottom, rgba(255, 255, 255, 0) 78%, rgba(255, 255, 255, 1) 100%), 
+                url(./img/rafting\ alto\ con\ volcan\ fondo\ 9\ 6.png) ;
+                background-repeat: no-repeat;
+                background-position: 53% 30%;
+                height: 900px;
+            }
+            nav{
+                color: white;
+                position: fixed; /* Fija el navbar en la parte superior */
+               
+                width: 100%; /* Asegura que el navbar ocupe todo el ancho */
+                z-index: 1000; /* Asegura que el navbar se quede encima de otros elementos */
+                background-color: #355570;
+                
+                border-bottom: 2px solid white;
+            }
+            nav{
+               display: block;
+               justify-content: center;
+               align-items: center;
+               margin: 0 ;
+               padding: 10px;
+               width: 100%;
+        
+               font-family: "Montserrat", sans-serif;
+            }
+             
+             
+             
+             .logo{
+                height: 0px;
+                cursor: pointer;
+            display: none;
+            }
+        .logo img{
+            display: none;
+                margin-left: 10px;
+                width: 80px;
+        
+        }
+             
+             nav ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                margin-left: 0px;
+                margin: 0px;
+                width: 100%;
+                padding: 0px;
+               
+        
+             }
+             
+             nav ul li{
+                 display: block;
+                 align-items: center;
+                 text-decoration: none;
+                 font-size: 12px;
+                
+             
+             }
+             
+             .c1 {
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                
+                 border-bottom: none; /* Sin borde por defecto */
+             }
+             
+             
+             .c1:hover{
+                 cursor: pointer;
+                
+             }
+             
+             
+             .texto li {
+                 all: unset;
+             }
+             
+             /*HEADER*/
+             
+             .contenedor-background{
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                 color: white;
+                 margin-top: 0px;
+                 font-family: "Montserrat", serif;
+                 gap: 120px;
+                 
+             }
+             
+             .titulo{
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+                 margin-top: 150px;
+             }
+             .titulo h1{
+                font-size: 30px;
+                text-align: center;
+             }
+             .titulo p{
+                margin-top: 20px;
+                font-size: 20px;
+                text-align: center;
+                max-width: 800px;
+             }
+             
+             .btn{
+                all: unset;
+                font-family: "Montserrat", serif; 
+             }
+             
+             .btn button{
+                 all: unset;
+                 color: white;
+                 background-color:#355570 ;
+                 padding: 10px;
+                 width: 200px;
+                 font-family: "Montserrat", serif;
+                 text-align: center;
+                 cursor: pointer;
+             }
+             
+             .btn :hover{
+                 transition: 2s;
+                 transform: scale(1.1);
+                 background-color: #4496dd;
+             }
+             
+             
+        /*main*/
+        
+        .contenedor-principal{
+            text-align: center;
+            font-family: "Montserrat", serif;
+            max-width: 1300px;
+            margin: 0 auto;
+            margin-top: 120px;
+            color: #355570;
+        }
+        
+        .contenedor-principal h1{
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        
+        .contenedor-principal p{
+            font-size: 14px;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+        
+        .presentacion{
+            height: 400px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .cart-img{
+            position: relative;
+            left: 0%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cart-img img{
+            width: 200px;
+            height:200px;
+        }
+        
+        .cart-text{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            width: 180px;
+            height: 180px;
+            left: -2%;
+            gap: 15px;
+            z-index: 1;
+            
+            color: #355570;
+            box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
+        -webkit-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
+        -moz-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
+        }
+        
+        .cart-text h1{
+            margin-top: 5px;
+        font-size: 20px;
+            text-align: center;
+        }
+        
+        .cart-text p{
+            text-align: center;
+            max-width: 150px;
+            margin: 0 auto;
+            font-size: 10px;
+        }
+        
+        .titular{
+            border-bottom: 1px solid #355570;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        
+        .descripcion{
+            display: flex;
+        }
+        
+        .btn-cart{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .btn-cart button{
+            all: unset;
+            color: white;
+            background-color:#355570 ;
+            padding: 5px;
+            width: 100px;
+            font-family: "Montserrat", serif;
+            text-align: center;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .btn-cart:hover{
+            transition: 2s;
+            transform: scale(1.1);
+        
+        }
+        
+        .fotos img{
+            width: 100px;
+            height: 200px;
+            margin: 2px;
+        }
+        
+        .fotos{
+            display: flex;
+            justify-content: center;
+            margin-top: 0px;
+        }
+        
+        .fotos img:hover{
+            transition: 2s ;
+            transform: scale(1.01);
+        }
+        
+        .banner img{
+        
+            width: 100%;
+        }
+        
+        .banner{
+            position: relative;
+            margin-top: 50px;
+        }
+        
+        .info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            top: 20%;    
+            position: absolute;
+            left: 2%;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-size: 10px;
+            max-width: 350px;
+            margin: 0 auto;
+            text-align: center;
+        
+        }
+        
+        .info img{
+            width: 50px;
+        }
+        
+        .presentacion-2{
+            height: 400px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        
+        .cart-text-2 {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            width: 180px;
+            height: 180px;
+            left: 10%;
+            top: 20%;
+            gap: 15px;
+            z-index: 1;
+            
+            color: #355570;
+            box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
+        -webkit-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
+        -moz-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
+        }
+        
+        .cart-img-2{
+            position: absolute;
+            left: 42%;
+            top: 18%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cart-img-2 img{
+            width: 200px;
+            height:200px;
+        }
+        
+        
+        .cart-text-2 h1{
+            margin-top: 5px;
+        font-size: 20px;
+            text-align: center;
+        }
+        
+        .cart-text-2 p{
+            text-align: center;
+            max-width: 150px;
+            margin: 0 auto;
+            font-size: 10px;
+        }
+        
+        
+        
+        /*FOOTER*/
+        
+        
+        
+        
+        
+        
+        .imagen-container img{
+            width: 100%;
+            height: 400px;
+        }
+        
+        .imagen-container{
+            margin-top: 100px;
+            position: relative; 
+            
+        }
+        
+        
+        .banner-footer{
+            position: relative;
+            display: flex;
+            margin: 0 auto;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        .cart-img-3{
+            position: absolute;
+            left: 10%;
+            top: 43%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cart-img-3 img{
+            width: 200px;
+            height:200px;
+        }
+        
+        .cart-text-3{
+            z-index: 1;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 255, 255);
+            width: 180px;
+            height: 180px;
+            top: 45%;
+            left: 50%;
+            gap: 10px;
+            
+            color: #355570;
+            box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
+        -webkit-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
+        -moz-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
+        }
+        
+        .cart-text-3 h1{
+            margin-top: 5px;
+        font-size: 20px;
+            text-align: center;
+        }
+        
+        .cart-text-3 p{
+        font-size: 12px;
+            max-width: 400px;
+        }
+        
+        .contendor-contacto{
+        
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .icons{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px;
+            max-width: 250px;
+            text-align: center;
+            gap: 5px;
+            
+        }
+        
+        .informacion{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+            gap: 10px;
+        }
+        
+        .icons i{
+            text-align: center;
+            font-size: 20px;
+            margin: 15px;
+            align-items: center; margin: 0px;
+        }
+        
+        .icons a{
+            font-size: 30px;
+        }
+        
+        .icons p{
+            display: flex;
+            justify-content: start;
+            text-align: start;
+        }
+        .icon p{
+            text-align: start;
+        
+        
+        }
+        
+        .text{
+            display: flex;
+            text-align: start;
+            align-items: start;
+            justify-content: start;
+            gap: 10px;
+            
+        }
+           
+            }
