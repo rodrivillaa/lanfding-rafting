@@ -22,7 +22,31 @@ header{
 section{
     padding-top: 5px;
 }
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición desde abajo */
+    right: 20px; /* Ajusta la posición desde la derecha */
+    width: 60px; /* Tamaño del ícono */
+    height: 60px;
+    background-color: #25D366; /* Color de fondo de WhatsApp */
+    border-radius: 50%; /* Hace que sea redondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1000; /* Asegura que esté siempre visible */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
 
+  .whatsapp-icon:hover {
+    transform: scale(1.1); /* Efecto al pasar el mouse */
+  }
+
+  .whatsapp-icon img {
+    width: 40px; /* Tamaño del ícono dentro del contenedor */
+    height: 40px;
+  }
 /*NAVBAR*/
 
 nav{
