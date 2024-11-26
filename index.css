@@ -405,22 +405,31 @@ font-size: 36px;
     width: 200px;
 }
 
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #355570;
+    height: 600px;
+    margin-top: -380px;
+}
+
 /*RAFTING BAJO*/
 .contenedor-principal-1{
     position: relative;
     display: flex;
     flex-direction: columnn;
     color: #355570;
-    margin-top: -90px;
+    margin-top: -250px;
     font-family: "Montserrat", serif;
     gap: 120px;
-    
+    z-index: -1;
     width: 100%;
 }
 
 .ofrecemos-1{
     position: absolute;
-    top: 13%;
+    top: 20%;
     left: 69%;
     gap: 20px;
     text-align:end;
@@ -442,8 +451,8 @@ font-size: 36px;
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 33.3%;
-    left: 41%;
+    top: 43.6%;
+    left: 40%;
     margin-top: 50px;
 
 }
@@ -458,6 +467,7 @@ font-size: 36px;
 .fotos-1 img{
     width: 350px;
     height: 650px;
+    margin: 5px;
 }
 
 
@@ -517,21 +527,23 @@ font-size: 36px;
     align-items: center;
 }
 .cart-img-3 img{
-    width: 600px;
-    height:600px;
+    width: 500px;
+    height:500px;
 }
 
 .cart-text-3{
     z-index: 1;
     position: absolute;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     top: 25%;
     left: 50%;
-    gap: 50px;
+    gap: 20px;
     
     color: #355570;
     box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
@@ -540,7 +552,7 @@ font-size: 36px;
 }
 
 .cart-text-3 h1{
-    margin-top: 80px;
+    margin-top: 30px;
 font-size: 36px;
     text-align: center;
 }
@@ -551,29 +563,76 @@ font-size: 36px;
 }
 
 .contendor-contacto{
-
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+
 }
 
 .icons{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
-    max-width: 250px;
+    justify-content: center;
+    margin: 10px;
     text-align: center;
-    gap: 5px;
-    
+    gap: 45px;
+    margin: 0 auto;
+    width: 100%;
 }
+.contenedor-general{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 10px;
+width: 100%;
+}
+
+.title-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin-bottom: 120px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.informacion-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 120px;
+
+
+}
+
+.instruccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.instruccion i{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+.name{
+display: flex;
+flex-direction: column;
+
+}
+
 
 .informacion{
     display: flex;
     flex-direction: column;
     margin-bottom: 5px;
-    gap: 15px;
+    gap: 10px;
 }
 
 .icons i{
@@ -606,7 +665,31 @@ font-size: 36px;
     gap: 10px;
     
 }
+.banner-footer{
+    background-color: #355570;
+    margin-top: -200px;
+}
 
+.btn-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    all: unset;
+
+}
+
+.btn-cart button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    all: unset;
+    background-color: #355570;
+    color: white;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+
+}
 
 @media (max-width: 1440px) {}
 
