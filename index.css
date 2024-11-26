@@ -1299,11 +1299,17 @@ font-size: 36px;
             height: 1100px;
             
         }
+
+        .mid{
+            display: flex;
+            background-color: #355570;
+            height: 300px;
+        }
         
         .banner-footerr{
             position: absolute;
-            top: -9%;
-            left: -110%;
+            top: -1%;
+            left: -120%;
         
         }
         
@@ -1319,13 +1325,13 @@ font-size: 36px;
         align-items: center;
         justify-content: center;
         top:0% ;
-        left: 50%;
-            margin-top: 160px;
-            padding: 20px;
-            color: #355570;
-            max-width: 200px;
+        left: 40%;
+        margin-top: 160px;
+        padding: 20px;
+        color: #355570;
+        max-width: 200px;
         
-            background-color: aliceblue;
+        background-color: aliceblue;
             
         }
         .titulo h1{
@@ -1381,7 +1387,7 @@ font-size: 36px;
             font-family: "Montserrat", serif;
             gap: 120px;
             height: 750px;
-            margin-bottom: 100px;
+            margin-bottom: -250px;
             width: 100%;
         }
         
@@ -1616,8 +1622,9 @@ font-size: 36px;
         }
         
         .ofrecemos-1{
+            margin-top: 20px;
             position: absolute;
-            top: 13%;
+            top: -50%;
             left: 45%;
             gap: 10px;
             background-color: aliceblue;
@@ -1642,16 +1649,7 @@ font-size: 36px;
             margin-top: 20px;
         }
         
-        .fotos-1{
-            display: flex;
-            justify-content: center;
-            position: absolute;
-            top: 33.3%;
-            left: 41%;
-            margin-top: 50px;
-        
-        }
-        
+    
         
         
         .fotos-1 img:hover{
@@ -1659,7 +1657,7 @@ font-size: 36px;
             transform: scale(1.01);
         }
         .fotos-1{
-            top: 35%;
+            top: 45%;
             left: 38.5%;
         }
         .fotos-1 img{
