@@ -4,6 +4,7 @@
 *{
     margin: 0;
     font-family: "Montserrat", serif;
+    
 }
 
 html{
@@ -16,11 +17,9 @@ all: unset;
 section{
     padding-top: 5px;
 }
+/* Ícono de WhatsApp */
 .whatsapp-icon {
-    position: fixed;
-    bottom: 20px; /* Ajusta la posición desde abajo */
-    right: 20px; /* Ajusta la posición desde la derecha */
-    width: 60px; /* Tamaño del ícono */
+    width: 60px;
     height: 60px;
     background-color: #25D366; /* Color de fondo de WhatsApp */
     border-radius: 50%; /* Hace que sea redondo */
@@ -28,7 +27,6 @@ section{
     justify-content: center;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
-    z-index: 1000; /* Asegura que esté siempre visible */
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
@@ -41,7 +39,35 @@ section{
     width: 40px; /* Tamaño del ícono dentro del contenedor */
     height: 40px;
 }
+.icons-container {
+    position: fixed;
+    bottom: 20px; /* Ajusta la posición desde abajo */
+    right: 20px; /* Ajusta la posición desde la derecha */
+    display: flex;
+    gap: 15px; /* Espacio entre los íconos */
+    z-index: 1000; /* Asegura que estén siempre visibles */
+}
 
+/* Ícono de flecha hacia arriba */
+.scroll-to-top {
+    width: 60px;
+    height: 60px;
+    background-color: #007bff; /* Color de fondo */
+    border-radius: 50%; /* Hace que sea redondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer;
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease-in-out;
+    color: white;
+}
+
+/* Mostrar el ícono de la flecha cuando se haga scroll hacia abajo */
+.scroll-to-top.show {
+    opacity: 1; /* Hace visible el ícono cuando se agrega la clase "show" */
+}
 
 
 
@@ -54,7 +80,7 @@ color: white;
    left: 0; /* Alinea el navbar al borde izquierdo */
    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
    z-index: 1000; /* Asegura que el navbar se quede encima de otros elementos */
-   border-bottom: 1px solid #355570;
+   border-bottom: 1px solid #0c528f;
 }
 
 
@@ -79,7 +105,7 @@ nav ul{
     list-style: none;
     justify-content: end;
     margin-right: 150px;
-    color: #355570;
+    color:#0c528f;
     
 }
 
@@ -124,6 +150,7 @@ nav ul li{
     font-family: "Montserrat", serif;
     gap: 120px;
     height: 1100px;
+    overflow-x: hidden;
     
 }
 
@@ -147,7 +174,7 @@ nav ul li{
   top:0% ;
   left: 55%;
     margin-top: 160px;
-    color: #355570;
+    color: #0c528f;
     max-width: 800px;
     gap: 40px;
     
@@ -172,7 +199,7 @@ nav ul li{
 .btn button{
     all: unset;
     color: white;
-    background-color:#355570 ;
+    background-color:#0c528f ;
     padding: 10px;
     width: 200px;
     font-family: "Montserrat", serif;
@@ -210,7 +237,7 @@ body{
 }
 
 .contenedor-principal h1{
-    color: #355570;
+    color: #0c528f;
     font-size: 48px;
     margin-bottom: 40px;
 }
@@ -239,93 +266,7 @@ margin: 0px;
 
 
 }
-/* /*RAFTING ALTO*/
 
-/* .presentacion{
-    height: 700px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-}
-.cart-img{
-    position: relative;
-    left: 0%;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cart-img img{
-    width: 600px;
-    height:600px;
-}
-
-.cart-text{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 255, 255);
-    width: 500px;
-    height: 500px;
-    left: -2%;
-    gap: 50px;
-    z-index: 1;
-    
-    color: #355570;
-    box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
--webkit-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
--moz-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
-}
-
-.cart-text h1{
-    margin-top: 80px;
-font-size: 36px;
-    text-align: center;
-}
-
-.cart-text p{
-    text-align: center;
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-.titular{
-    border-bottom: 1px solid #355570;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-
-.descripcion{
-    display: flex;
-}
-
-.btn-cart{
-    display: flex;
-    justify-content: center;
-}
-
-.btn-cart button{
-    all: unset;
-    color: white;
-    background-color:#355570 ;
-    padding: 10px;
-    width: 200px;
-    font-family: "Montserrat", serif;
-    text-align: center;
-    cursor: pointer;
-}
-
-.btn-cart:hover{
-    transition: 2s;
-    transform: scale(1.1);
-
-}
- */ 
 .fotos img{
     width: 300px;
     height: 600px;
@@ -355,7 +296,7 @@ font-size: 36px;
 .ofrecemos p{
     max-width: 500px;
     font-size: 24px;
-    color: #355570;
+    color: #0c528f;
 }
 
 .banner-img{
@@ -409,7 +350,7 @@ font-size: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #355570;
+    background-color: #0c528f;
     height: 600px;
     margin-top: -380px;
 }
@@ -419,7 +360,7 @@ font-size: 36px;
     position: relative;
     display: flex;
     flex-direction: columnn;
-    color: #355570;
+    color: #0c528f;
     margin-top: -250px;
     font-family: "Montserrat", serif;
     gap: 120px;
@@ -442,7 +383,7 @@ font-size: 36px;
 .ofrecemos-1 p{
     max-width: 500px;
     font-size: 24px;
-    color: #355570;
+    color: #0c528f;
     text-align: end;
     margin-top: 40px;
 }
@@ -473,7 +414,7 @@ font-size: 36px;
 
 .informacion{
     display: flex;
-    color: #355570;
+    color: #0c528f;
     text-align: center;
     font-size: 20px;
     margin-bottom: 200px;
@@ -545,7 +486,7 @@ font-size: 36px;
     left: 50%;
     gap: 20px;
     
-    color: #355570;
+    color: #0c528f;
     box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
 -webkit-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
 -moz-box-shadow: 1px 1px 14px 6px rgba(163,163,163,0.75);
@@ -580,6 +521,7 @@ font-size: 36px;
     gap: 45px;
     margin: 0 auto;
     width: 100%;
+    cursor: pointer;
 }
 .contenedor-general{
     display: flex;
@@ -666,7 +608,7 @@ flex-direction: column;
     
 }
 .banner-footer{
-    background-color: #355570;
+    background-color: #0c528f;
     margin-top: -200px;
 }
 
@@ -683,12 +625,19 @@ flex-direction: column;
     justify-content: center;
     align-items: center;
     all: unset;
-    background-color: #355570;
+    background-color: #0c528f;
     color: white;
     width: 150px;
     padding: 10px;
     text-align: center;
+    cursor: pointer;
 
+}
+
+.btn-cart button:hover{
+    transition: 2s;
+    transform: scale(1.1);
+    background-color: #4496dd;
 }
 
 @media (max-width: 1440px) {}
