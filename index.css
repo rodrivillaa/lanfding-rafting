@@ -75,7 +75,6 @@ section{
 
 nav{
 color: white;
-  
    top: 0; /* Lo coloca en la parte superior de la página */
    left: 0; /* Alinea el navbar al borde izquierdo */
    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
@@ -96,8 +95,6 @@ color: white;
 }
 nav{
     display: block;
-    
-    font-family: "Montserrat", sans-serif;
 }
 
 nav ul{
@@ -628,7 +625,7 @@ flex-direction: column;
 .banner-footer{
     position: relative;
     z-index: 10;
-    background-color: #0c528f;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #0c528f), #0c528f;
     margin-top: -200px;
 }
 
