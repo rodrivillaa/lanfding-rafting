@@ -3307,6 +3307,13 @@ flex-direction: column;
 }
 
     @media (max-width: 480px) {
+
+        html, body {
+            margin: 0; /* Elimina márgenes predeterminados */
+            padding: 0; /* Elimina padding predeterminados */
+            width: 100%; /* Se asegura de que el ancho sea el mismo que la ventana */
+            overflow-x: hidden; /* Evita el scroll horizontal */
+        }
         
         nav{
             color: white;
@@ -3326,7 +3333,7 @@ flex-direction: column;
                 display: none;
             }
             .logo img{
-                margin-left: 50px;
+                margin-left: 0px;
                 width: 100px;
                 
             }
@@ -3337,6 +3344,7 @@ flex-direction: column;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
         
                 
                 font-family: "Montserrat", sans-serif;
@@ -3348,16 +3356,17 @@ flex-direction: column;
                 justify-content: center;
                 margin: 0 auto;
                 color: #355570;
+               
                 
                 
             }
             
             nav ul li{
                 display: block;
-                align-items: end;
+                align-items: center;
                 text-decoration: none;
-                font-size: 12px;
-                margin: 20px;
+                font-size: 10px;
+                margin: 15px;
              
             
             }
@@ -3393,7 +3402,6 @@ flex-direction: column;
                 font-family: "Montserrat", serif;
                 gap: 120px;
                 height: 1100px;
-              
                 
             }
             
@@ -3502,6 +3510,7 @@ flex-direction: column;
                 margin-top: 100px;
                 top:7% ;
                 right:-20%;
+                
             
             
             
